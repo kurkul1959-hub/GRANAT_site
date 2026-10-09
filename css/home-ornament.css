@@ -1,0 +1,33 @@
+/* Ornament extracted from the supplied reference; home page only. */
+body[data-page="home"] main{--ornament-width:min(1200px,calc(100vw - 64px))}
+body[data-page="home"] main::before{
+ content:"";display:block;width:100%;height:calc(100vw * .054);
+ background:url("../images/granat-reference-ornament.png") center calc(100vw * -.0824)/100% auto no-repeat;
+ pointer-events:none;
+}
+body[data-page="home"] .hero{position:relative;margin-bottom:150px}
+body[data-page="home"] .hero::after{
+ content:"";position:absolute;left:0;right:0;bottom:-130px;
+ height:calc(var(--ornament-width) * .122);
+ background:url("../images/granat-reference-ornament.png") center calc(var(--ornament-width) * -.425)/100% auto no-repeat;
+ pointer-events:none;
+}
+@media(min-width:1280px){
+ body[data-page="home"] .hero::after{left:30px;right:-30px}
+ body[data-page="home"] .hero::before{
+  content:"";position:absolute;left:440px;top:60px;
+  width:122px;height:500px;
+  background:url("../images/granat-reference-ornament.png") -227px -260px/753px 1000px no-repeat;
+  pointer-events:none;
+ }
+}
+@media(max-width:1279px){
+ body[data-page="home"] .hero{margin-bottom:90px}
+ body[data-page="home"] .hero::after{height:calc(var(--ornament-width) * .054);bottom:-60px;background-position:center calc(var(--ornament-width) * -.0824)}
+}
+@media(max-width:700px){
+ body[data-page="home"] main{--ornament-width:calc(100vw - 32px)}
+ body[data-page="home"] main::before{height:42px;background-size:780px auto;background-position:center -64px}
+ body[data-page="home"] .hero{margin-bottom:60px}
+ body[data-page="home"] .hero::after{height:42px;bottom:-35px;background-size:780px auto;background-position:center -64px}
+}
