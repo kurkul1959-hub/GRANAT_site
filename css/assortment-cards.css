@@ -1,0 +1,22 @@
+/* The five approved cards, exclusive to the assortment page. */
+body[data-page="catalog"] .product-featured{
+ grid-column:span 2;display:flex;flex-direction:column;
+ background:var(--cream);border:1px solid #C49A55;border-radius:14px;
+}
+body[data-page="catalog"] .product-featured>img{height:280px;object-fit:cover}
+body[data-page="catalog"] .product-featured .product-body{padding:24px;display:flex;flex-direction:column;flex:1}
+body[data-page="catalog"] .product-featured h2{color:var(--wine);font-size:26px;margin:8px 0 12px}
+body[data-page="catalog"] .product-description{font-size:16px;font-weight:500;color:var(--muted);margin:0 0 20px;max-width:440px}
+body[data-page="catalog"] .product-purchase{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:auto}
+body[data-page="catalog"] .product-featured .product-price{font-size:28px;color:var(--wine);margin:0;white-space:nowrap}
+body[data-page="catalog"] .product-featured .product-price span{font-size:15px}
+body[data-page="catalog"] .product-featured .button{width:auto;font-size:14px;padding:12px 22px;flex-shrink:0}
+body[data-page="catalog"] .product-benefits{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 16px;padding:12px 24px;border-top:1px solid #C49A5580;background:#f3ead8;color:var(--wine);font-size:12px;font-weight:600}
+@media(max-width:700px){
+ body[data-page="catalog"] .product-featured>img{height:240px}
+ body[data-page="catalog"] .product-featured .product-body{padding:20px}
+ body[data-page="catalog"] .product-featured h2{font-size:23px}
+ body[data-page="catalog"] .product-featured .product-price{font-size:25px}
+ body[data-page="catalog"] .product-featured .button{padding:11px 16px}
+ body[data-page="catalog"] .product-benefits{padding:12px 20px}
+}
