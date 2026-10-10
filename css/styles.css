@@ -19,3 +19,11 @@ main .eyebrow{font-size:12px}
 .teaser p{margin-bottom:14px}
 
 .details{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+/* Shared gold background; same scale and contrast on all pages. */
+main{
+ background-color:var(--cream);
+ background-image:linear-gradient(rgba(250,248,242,.35),rgba(250,248,242,.35)),url("../images/granat-gold-background.png");
+ background-size:auto,480px 320px;
+ background-repeat:repeat;
+}

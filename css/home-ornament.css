@@ -22,11 +22,3 @@ body[data-page="home"] .hero::after{
  body[data-page="home"] .hero{margin-bottom:65px}
  body[data-page="home"] .hero::after{height:54px;bottom:-45px;background-size:220px auto;background-position:center -10px;border-radius:8px}
 }
-
-/* A faint, small-scale gold pattern under the home page content. */
-body[data-page="home"] main{
- background-color:var(--cream);
- background-image:linear-gradient(rgba(250,248,242,.35),rgba(250,248,242,.35)),url("../images/granat-gold-background.png");
- background-size:auto,480px 320px;
- background-repeat:repeat;
-}
