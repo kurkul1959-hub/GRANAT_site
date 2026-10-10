@@ -1,10 +1,10 @@
 // Presentation only: prices and product identifiers come from js/data.js.
 const featuredCatalogCards={
- apples:{image:'apples-granat-new.png',description:'Яблоки для фруктовой тарелки, домашних пирогов и компотов.'},
- citrus:{image:'mandarins-granat-new.png',description:'Мандарины для фруктовой тарелки и небольшого перекуса.'},
- grapes:{image:'vinograd-bely-new.png',description:'Светлый виноград для фруктовой тарелки и подачи к столу.'},
- pink:{image:'vinograd-rozovy-new.png',description:'Розовый виноград для фруктовой тарелки и подачи к столу.'},
- melon:{image:'arbuz-new.png',description:'Арбуз для подачи ломтиками и приготовления фруктовых напитков.'}
+ apples:{image:'apples-granat-new.png',description:'Румяные, хрустящие и сочные! Сладкий аромат и свежий вкус в каждом кусочке.'},
+ citrus:{image:'mandarins-granat-new.png',description:'Солнечные, ароматные и невероятно сочные! Сладкие дольки с лёгкой цитрусовой кислинкой.'},
+ grapes:{image:'vinograd-bely-new.png',description:'Нежные, налитые соком ягоды с приятной сладостью. Настоящее удовольствие!'},
+ pink:{image:'vinograd-rozovy-new.png',description:'Крупные, сочные ягоды с насыщенным сладким вкусом и тонким ароматом.'},
+ melon:{image:'arbuz-new.png',description:'Сочная алая мякоть, освежающая сладость и настоящий вкус лета!'}
 };
 window.renderFeaturedCatalogCard=(product,formatPrice)=>{
  const descriptions={potatoes:'Для гарниров и домашних блюд.',candy:'Сладости к чаю и кофе.',nuts:'Для перекуса и подачи к столу.',juice:'Напиток для подачи к столу.',tea:'Для чаепития дома.'};
