@@ -22,3 +22,5 @@ body[data-page="home"] .hero::after{
  body[data-page="home"] .hero{margin-bottom:65px}
  body[data-page="home"] .hero::after{height:54px;bottom:-45px;background-size:220px auto;background-position:center -10px;border-radius:8px}
 }
+
+body[data-page="home"] .photo-note{background:var(--wine);color:#fff}
